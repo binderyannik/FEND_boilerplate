@@ -3,20 +3,274 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sass.scss">
+    <title>Rustica - Rösterei & Café</title>
   </head>
-  <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
-    <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
-    </main>
-    <script src="/js/index.js" type="module"></script>
-  </body>
+
+<body>
+    <nav>
+        <ul>
+            <li class="nav-logo-left">
+                <a href="./index.html"><img class="logo" src="images/logo.svg" title="Das Logo"></a>
+            </li>
+            <li class="nav-menu-right">
+                <a href="/ursprung-sub-page/ursprung-sub-page"><img class="menu" src="/images/burger-menu.svg"
+                        title="Das Menü"></a>
+            </li>
+            <div class="menu-desktop">
+                <li><a href="./cafe-sub-page/cafe-sub-page.html">Das Café</a></li>
+                <li><a href="./ursprung-sub-page/ursprung-sub-page.html">Herkunft</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><img src="/images/burger-menu.svg"> </li>
+            </div>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <h1 class="h1">Rustica</h1>
+        <h4 class="text-header"> Bio und Fair seit 1991 </h4>
+        <a href="cafe-sub-page/cafe-sub-page.html" class="header-button"> Zum Shop </a>
+    </header>
+
+
+    <!--=============================================================================================================
+                    CONTENT-START NACH HEADER
+=====================================================================================================================
+    -->
+    <section class="roesterei-wrapper" id="roesterei_cafe">
+        <section class="flex-wrapper">
+            <h2>
+                Rösterei & Café
+            </h2>
+            <p class="p-roesterei">
+                Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in
+                der Innenstadt.
+            </p>
+            <section class="timetable">
+                <div class="timetable-spalte1">
+                    <p>Komm uns besuchen!</p>
+                    <p>Frauenhoferstr. 13, Kiel</p>
+                </div>
+                <div class="timetable-spalte2">
+                    <p>Mo – Fr 8 – 18 Uhr </p>
+                    <p>Sa 11 – 18 Uhr</p>
+                </div>
+            </section>
+        </section>
+        <img class="img-store-cafe" src="/images/FEND-Coffee-shop-komprimiert.png" alt="Bild des Cafés"
+            title="Unser Café">
+    </section>
+
+    <section class="bio-wrapper" id="bio-fair">
+        <div class="bio-text-wrapper">
+            <h3> Bio und Fair
+            </h3>
+            <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Weit
+                hinten,
+                hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Und das alles in
+                bester Bio
+                Qualität
+            </p>
+        </div>
+        <img class="img-coffee-plant" src="/images/FEND-coffee-plant.png" alt="Bild einer Kaffeepflanze"
+            title="Eine Kaffeepflanze unserer Kaffeesorte Costa-Rica">
+    </section>
+
+    <!--=============================================================================================================
+                    ENTDECKE UNSERE KAFFEESORTEN
+    =====================================================================================================================
+    -->
+
+
+    <article id="products">
+        <h2>
+            Entdecke unsere Kaffeesorten
+        </h2>
+        <section class="product-wrapper">
+            <article class="product-text">
+                <img class="product-picture" src="/images/FEND_Coffee_Costa-Rica 2.png"
+                    alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                <h4>
+                    Costa Rica
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="/images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="/images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="/images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+
+            <article class="product-text">
+                <img class="product-picture" src="/images/FEND_Coffee_Costa-Rica 2.png"
+                    alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                <h4>
+                    Costa Rica
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="/images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="/images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="/images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+
+
+            <article class="product-text">
+                <img class="product-picture" src="/images/FEND_Coffee_Costa-Rica 2.png"
+                    alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                <h4>
+                    Costa Rica
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="/images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="/images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="/images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+
+
+            <article class="product-text">
+                <img class="product-picture" src="/images/FEND_Coffee_Costa-Rica 2.png"
+                    alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                <h4>
+                    Costa Rica
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="/images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="/images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="/images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+        </section>
+
+        <div class="shop-button-wrapper">
+            <a href="#" class="shop-button" aria-label="Hier geht's zum Shop">
+                Alle Produkte
+            </a>
+        </div>
+
+    </article>
+
+    <aside class="herkunft">
+        <h3 class="title-herkunft">Herkunft</h3>
+        <p class="p-herkunft">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die
+            Blindtexte. Und das
+            alles in bester Bio Qualität
+        </p>
+        <a class="a-herkunft" href="#">
+            <p>mehr</p>
+        </a>
+    </aside>
+
+
+
+    <!--=============================================================================================================
+                    PRODUKT - ARGUMENTE -- START
+    =====================================================================================================================
+    -->
+    <article class="wrapper-produkt">
+        <h2>Das steckt drin </h2>
+        <img class="image-produkt" src="/images/FEND_Coffee_Costa-Rica 2.png" alt="Bild unseres Costa-Rica Kaffees"
+            title="Unser Kaffee Costa-Rica">
+
+        <section class="wrapper-argumente">
+            <figure>
+                <img src="images/icon-kaffee-tasse.svg" alt="bester Geschmack" title="bester Geschmack">
+                <p> Bester Geschmack </p>
+            </figure>
+            <figure>
+                <img src="images/icon-kaffee-schaufel-black.svg" alt="fair gehandelt" title="Fair gehandelt">
+                <p> Fair gehandelt </p>
+            </figure>
+            <figure>
+                <img src="/images/icon-kaffee-pflanze.svg" alt="Bio-Qualität" title="Bio Qualität">
+                <p> Bio Qualität </p>
+            </figure>
+        </section>
+        <section class="button-wrapper">
+            <a href="#" class="shop2-button" aria-label="Hier geht's zum Shop">
+                Zum Shop
+            </a>
+        </section>
+    </article>
+
+
+
+    <section class="map">
+        <h2>Komm vorbei</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5852.169899487334!2d10.119373967873317!3d54.342996876073094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1675869779847!5m2!1sde!2sde"
+            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--=============================================================================================================
+                    FOOTER -- START
+    =====================================================================================================================
+    -->
+    <footer class="footer-wrapper">
+        <a href="#" class="footer-logo" ><img src="/images/logo.svg" class="footer-logo" alt="Unser Logo" title="Unser Logo"></a>
+        <div class="footer-cafe-name">
+            <h3 class="footer-h3">Rustica</h3>
+            <h4 class="footer-h4">Café & Rösterei</h4>
+        </div>
+        <section class="kontakt-daten">
+            <div class="kontakt-spalte1">
+                <p>Komm uns besuchen!</p>
+                <p>Frauenhoferstr. 13, Kiel</p>
+            </div>
+            <div class="kontakt-spalte2">
+                <p>Mo – Fr 8 – 18 Uhr </p>
+                <p>Sa 11 – 18 Uhr</p>
+            </div>
+        </section>
+
+        <section class="footer-menu">
+            <div class="footer-menu-left">
+                <p><a href="#" aria-label="Zum Impressum">Impressum</a></p>
+                <p><a href="#" aria-label="Zum Datenschutz">Datenschutz</a></p>
+            </div>
+            <div class="footer-menu-right">
+                <p><a href="sub-pages/cafe-sub-page.html" aria-label="Infos zum Café">Café </a></p>
+                <p><a href="#" aria-label="Zum Shop">Shop</a></p>
+                <p><a href="sub-pages/ursprung-sub-page.html" aria-label="Herkunft des Kaffee's">Herkunft</a></p>
+            </div>
+        </section>
+
+
+    </footer>
+
+
+    <p class="moin-p"> Moin.In short, text gradients are a fun, useful way to create engaging designs and
+        eye-catching features for your site. If you want to hop on the gradient-train and want something a little
+        different than radial and linear gradient backgrounds, then gradient text might be the perfect choice for
+        you!
+    </p>
+
+
+
+</body>
+
 </html>

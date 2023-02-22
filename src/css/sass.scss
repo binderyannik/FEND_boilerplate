@@ -1,0 +1,611 @@
+/* COLOR-STYLES
+    WEISS: rgba(255,255,255,1)      #FFFFFF
+    ANTRAZIT: rgba(26,26,26,1)      #1A1A1A
+    BEIGE/KP: rgba(215,190,157,1)   #D7BE9D
+    PETROL:   rgba(0,109,126,1)     #006D7E
+    ROSA:     rgba(237,209,201,1)   #EDD1C9
+    ORANGE:   rgba(215,124,18,1)    #D77C12
+    MED GREY: rgba(115,115,115,1)   #737373
+    LIGHT GREY:rgba(233,233,233,1)  #E9E9E9
+*/
+
+
+*{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    line-height: 90%;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 6.4rem;
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: 140%;
+}
+
+@import url(../css/components/navigation.css);
+
+@import "./components/header.css";
+
+
+
+/*=============================================================================================================
+                    HEADER-TEXT
+===============================================================================================================
+*/
+
+
+.h1 {
+    font-size: 8.4rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.8);
+}
+
+.text-header{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: white;
+}
+
+.header-button{
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    padding: 1.6rem 0px;
+    background-color: #1a1a1a;
+    border-radius: 0.7rem;
+    width: 18rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-button:hover{
+    background-color: #737373;
+    color: white;
+}
+.header-button:focus{
+    border: 2px solid white;
+}
+.header-button:active{
+    background-color: #D7BE9D;
+}
+
+
+/*=============================================================================================================
+                    RÖSTEREI & CAFÉ - START
+===============================================================================================================
+*/
+
+
+.roesterei-wrapper {
+    margin: 6rem 7% auto 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrapper, .bio-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border: 0px solid red;
+}
+
+.flex-wrapper h2, .p-roesterei, .bio-wrapper h3 {
+    margin-bottom: 2rem;
+}
+
+.timetable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.img-store-cafe {
+    width: 60%;
+    margin: 40px 0 auto auto;
+}
+
+#bio-fair{
+    margin: 4rem 7% 6rem 7%;
+}
+
+.img-coffee-plant {
+    width: 60%;
+    margin-top: 4rem;
+}
+
+
+/*=============================================================================================================
+                    RÖSTEREI & CAFÉ - ENDE
+===============================================================================================================
+*/
+
+
+
+
+#products {
+    background-color:#1a1a1a;
+    padding-top: 60px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.product-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product-text{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    color: white;
+    border: 0px solid orange;
+
+}
+.product-picture {
+    background-color:#FFF;
+}
+
+.product-text h4 {
+    margin-top: 5px;
+    line-height: 130%;
+}
+.product-text p{
+    color: #737373;
+}
+
+.product-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 15px;
+    margin-top: 4px; 
+}
+.product-icons img {
+    width: 15px;
+    margin-right: 5px;
+    height: 15px;
+}
+
+.shop-button-wrapper{
+    border: 0px solid green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.shop-button {
+    font-size: 1.4rem;
+    background-color: #1a1a1a;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+
+
+.shop-button:hover{
+    background-color: #737373;
+    color: white;
+}
+.shop-button:focus{
+    border: 2px solid #D7BE9D;
+}
+.shop-button:active{
+    background-color: #D7BE9D;
+}
+
+/*=============================================================================================================
+                    ENTDECKE UNSERE KAFFEESORTEN - ENDE
+===============================================================================================================
+*/
+
+
+
+
+
+.herkunft{
+    background-image: url('../images/FEND-Coffee-bags-2.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+    width:100%;
+    height: 50vh;
+    min-height: 300px;
+}
+.p-herkunft, .a-herkunft{
+    text-decoration: none;
+    color: white;
+    width: 60%;
+}
+
+
+
+.wrapper-produkt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    border: 0px solid red;
+}
+.wrapper-produkt h2 {
+    margin-bottom: 35px;
+}
+
+.image-produkt {
+    height: 284px;
+    margin-bottom: 40px;
+}
+
+.wrapper-argumente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+    border: 0px solid orange;
+}
+
+.wrapper-argumente figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid red;
+}
+.wrapper-argumente figure img{
+    height: 45px;
+    width: 45px;
+    border: 0px solid green;
+}
+
+.wrapper-argumente figure p {
+    width: min-content;
+    margin-top: 15px;
+    text-align: center;
+    border: 0px solid blue;   
+}
+
+
+
+.button-wrapper{
+    border: 0px solid green;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.shop2-button{
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    border: 1px solid white; 
+    border-radius: 5px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.map{
+    margin-top: 60px;
+}
+
+.map h2{
+    margin-bottom: 4rem;
+    padding-left: 7%;
+}
+
+
+
+
+/*=============================================================================================================
+                    FOOTER
+===============================================================================================================
+*/
+@import "./components/footer.css";
+
+
+
+
+.moin-p{
+    margin: 7%;
+    width: 80%;
+    text-align:center;
+    font-size: 40px;
+    font-weight: 900;
+    background-image: linear-gradient(149deg,#ff8848,#d441f8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 911px) 
+{
+}
+
+@media (min-width: 912px) and (max-width: 1199px)
+{
+}
+
+@media (min-width: 1200px){
+
+
+    /*=============================================================================================================
+                    HEADER-TEXT - START
+===============================================================================================================
+*/
+    .h1 {
+        font-size: 10rem;
+    }
+    
+    .text-header{
+        font-size: 3.2rem;
+    }
+
+
+/*=============================================================================================================
+                    RÖSTEREI & CAFÉ - START
+===============================================================================================================
+*/
+.roesterei-wrapper {
+    margin: 10rem 7% 10rem 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    border: 0px solid red;
+    width: 40%;
+}
+
+.bio-wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 0px solid red;
+}
+
+.bio-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 40%;
+    position: relative;
+    bottom: 6rem;
+}
+
+
+.flex-wrapper h2, .p-roesterei, .bio-wrapper h3 {
+    margin-bottom: 2rem;
+}
+
+.timetable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.img-store-cafe {
+    width: 49%;
+    margin: unset;
+}
+
+#bio-fair{
+    margin: 4rem 7% 10rem 7%;
+}
+
+.img-coffee-plant {
+    width: 49%;
+    margin-top: unset;
+}
+
+
+/*=============================================================================================================
+                    RÖSTEREI & CAFÉ - ENDE
+
+
+                    ENTDECKE UNSERE KAFFEE SORTEN - START
+===============================================================================================================
+*/
+
+
+.product-text{
+width: 23.5%;
+padding-bottom: 8rem;
+}
+
+#products{
+    padding-bottom: 12.5rem;
+}
+
+.shop-button-wrapper{
+    margin-top: unset;
+}
+
+/*=============================================================================================================
+                    ENTDECKE UNSERE KAFFEE SORTEN - ENDE
+
+
+                    HERKUNFT - START
+===============================================================================================================
+*/
+
+.title-herkunft {
+    display: none;
+}
+
+.p-herkunft, .a-herkunft {
+    width: 20%;
+}
+
+/*=============================================================================================================
+                    HERKUNFT - ENDE
+
+
+                    ARGUMENTE - START
+===============================================================================================================
+*/
+
+
+.wrapper-produkt{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+    border: 0px solid red;
+    margin: auto 7%;
+
+}
+.wrapper-produkt h2 {
+    margin-top: 10rem;
+    margin-bottom: 3.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.image-produkt {
+    width: 40%;
+    height: auto;
+    margin-bottom: unset;
+}
+
+.wrapper-argumente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: auto;
+    padding: 2rem 0 0 10rem;
+    border: 0px solid orange;
+}
+
+.wrapper-argumente figure {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+    align-items: center;
+    border: 0px solid red;
+}
+.wrapper-argumente figure img{
+    height: 45px;
+    width: 45px;
+    margin-right: 5rem;
+    border: 0px solid green;
+}
+
+.wrapper-argumente figure p {
+    width: min-content;
+    text-align: start;
+    border: 0px solid blue;   
+}
+
+.button-wrapper{
+    position: absolute;
+    bottom: 4rem;
+    margin: 0 auto;
+    right: 28rem;
+    border: 0px solid green;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.shop2-button{
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    border: 1px solid white; 
+    border-radius: 5px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.map h2 {
+    margin-top: 8rem;
+
+}
+
+/*=============================================================================================================
+                    ARGUMENTE - ENDE
+
+
+                    FOOTER - START
+===============================================================================================================
+*/
+
+
+
+}

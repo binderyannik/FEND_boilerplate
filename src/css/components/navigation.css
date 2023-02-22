@@ -1,0 +1,83 @@
+
+nav {
+    position: fixed;
+    /*background: #1a1a1a;*/
+    width: 100%;
+    z-index: 1;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start:unset;
+    align-items: center;
+}
+
+nav .logo {
+    height: 40px;
+    filter: invert(100%);
+    margin-top: 15px;
+
+}
+
+nav .nav-logo-left {
+    margin-left: 7%;
+}
+
+nav .menu {
+    height: 20px;
+    filter: invert(100%);
+    margin-top: 15px;
+}
+
+nav .nav-menu-right {
+    margin-right: 7%;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+
+
+/*=============================================================================================================
+                    MENÜ FÜR DIE DESKTOP-ANSICHT - START
+===============================================================================================================
+*/
+
+@media (min-width: 1200px){
+    nav .logo {
+        height: 35px;
+        margin-top: 10px;
+    }
+    
+    nav .menu {
+        display: none;
+        height: 24px;
+        margin-top: 10px;
+    }
+
+    .menu-desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 7%;
+    }
+    
+    .menu-desktop img {
+        filter: invert(100%);
+        height: 15px;
+        vertical-align: middle;
+    }
+
+    .menu-desktop a {
+        font-size: 2rem;
+        color: #fff;
+        margin-right: 4rem;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,411 @@
+*{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    line-height: 90%;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 6.4rem;
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: 140%;
+}
+
+
+
+/*=============================================================================================================
+                    NAVIGATION
+===============================================================================================================
+*/
+nav {
+    position: fixed;
+    /*background: #1a1a1a;*/
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start:unset;
+    align-items: center;
+}
+
+nav .logo {
+    height: 30px;
+    filter: invert(100%);
+    margin-top: 15px;
+
+}
+
+nav .nav-logo-left {
+    margin-left: 7%;
+}
+
+nav .menu {
+    height: 16px;
+    filter: invert(100%);
+    margin-top: 15px;
+}
+
+nav .nav-menu-right {
+    margin-right: 7%;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+
+/*=============================================================================================================
+                    HEADER-BILD
+===============================================================================================================
+*/
+.hero-section{
+    height: 50vh;
+    width: 100%;
+    border: 0px solid orange;
+    background-image: url('../images/FEND-Coffee-beans-hand-2.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*=============================================================================================================
+                    URSPRUNG - START
+===============================================================================================================
+*/
+
+.ursprung--start {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 7%;
+    width: 100%;
+    margin-block-start: 6rem;
+    margin-block-end: 6rem;
+}
+
+.ursprung--start  h3 {
+    line-height: 120%;
+    margin-bottom: 1.5rem;
+}
+
+.ursprung--text--start {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.ursprung--text--start h2 {
+    margin-bottom: 2rem;
+}
+
+.ursprung--video--filling {
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.ursprung--text--anbaugebiete {
+    width: 100%;
+}
+
+.ursprung--img--anbaugebiete {
+    width: 75%;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.ursprung--text--kaffeebauern {
+    width: 100%;
+}
+
+.ursprung--img--kaffeebauern {
+    margin-top: 2rem;
+    width: 75%;
+}
+
+
+
+/*=============================================================================================================
+                   FOOTER - START
+===============================================================================================================
+*/
+
+.footer-wrapper {
+    padding: 60px 7%;
+    background-color:#1a1a1a;
+    color:#FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-logo {
+    height: 35px;
+    align-self: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo img {
+    filter: invert(100%);
+}
+
+.footer-h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.footer-h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.kontakt-daten {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.kontakt-spalte1, .kontakt-spalte2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.footer-menu a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-menu-right, .footer-menu-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1080px) {
+    
+/*=============================================================================================================
+                    MENÜ FÜR DIE DESKTOP-ANSICHT - START
+===============================================================================================================
+*/
+
+nav .logo {
+    height: 35px;
+    margin-top: 10px;
+}
+
+nav .menu {
+    display: none;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.menu-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 7%;
+}
+
+.menu-desktop img {
+    filter: invert(100%);
+    height: 15px;
+}
+
+.menu-desktop a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+
+
+/*=============================================================================================================
+                    URSPRUNG - START
+===============================================================================================================
+*/
+
+.ursprung--start {
+    justify-content: space-between;
+    margin-block-start: 6rem;
+    margin-block-end: 6rem;
+}
+
+.ursprung--start  h3 {
+    line-height: 120%;
+    margin-bottom: 3rem;
+}
+
+.ursprung--text--start {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.ursprung--text--start h2 {
+    margin-bottom: 2rem;
+}
+
+.ursprung--video--filling {
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.ursprung--text--anbaugebiete {
+    width: 30%;
+}
+
+.ursprung--img--anbaugebiete {
+    width: 60%;
+    margin-top: 8rem;
+    margin-bottom: 16rem;
+}
+
+.ursprung--img--kaffeebauern {
+    margin-top: 10rem;
+    margin-left: 4rem;
+    width: 40%;
+}
+
+.ursprung--text--kaffeebauern {
+    width: 30%;
+    margin-right: 10rem;
+    order: 3;
+}
+
+
+
+    /*FOOTER - START
+    ===============================================================================================================
+    */
+    
+    
+    .footer-wrapper {
+        padding: 60px 7%;
+        background-color:#1a1a1a;
+        color:#FFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-logo{
+        height: 55px;
+        margin-bottom: 15px;
+        margin-right: 80%;
+        justify-self: flex-start;
+    }
+    
+    .footer-cafe-name {
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+        width: 25%;
+    }
+    
+    .footer-cafe-name h3 {
+        font-size: 4.2rem;
+    }
+    
+    .footer-cafe-name h4 {
+        font-size: 1.8rem;
+    }
+    .kontakt-daten {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 25%;
+    }
+    
+    .kontakt-spalte1, .kontakt-spalte2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+    
+    .footer-menu{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: unset;
+        width: 50%;
+    }
+    
+    .footer-menu a{
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+    
+    .footer-menu-right, .footer-menu-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .footer-menu-left {
+        order:1;
+    }
+    
+    
+    
+
+}
