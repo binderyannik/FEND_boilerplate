@@ -1,0 +1,9 @@
+@import "base.css";
+@import "components/navigation.css";
+@import url(components/footer.css); 
+
+nav {
+    filter: invert(100%);
+    padding-bottom: 20rem;
+}
+
