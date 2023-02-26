@@ -2,7 +2,9 @@
 @import "components/navigation.css";
 @import url(components/footer.css); 
 
-
+h1, h2 {
+    margin-bottom: 3rem;
+}
 
 nav {
     filter: invert(100%);
@@ -11,11 +13,12 @@ nav {
 
 .first--article {
     display: inline-block;
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 .content-wrapper {
     margin: 0 7%;
+    max-width: 65rem;
 }
 
 article {
@@ -24,6 +27,16 @@ article {
     & li {
         list-style: inside;
         line-height: 200%;
-
     }
+    &:last-child {
+        margin-bottom: 15rem;
+    }
+}
+
+
+@media (min-width: 850px) {
+    .content-wrapper {
+    margin: 0 auto;
+    max-width: 65rem;
+}
 }

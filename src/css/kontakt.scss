@@ -1,0 +1,33 @@
+@import "base.css";
+@import "variables.scss";
+@import "components/navigation.css";
+@import url(components/footer.css); 
+
+nav {
+    filter: invert(100%);
+    padding-bottom: 20rem;
+}
+
+
+.flexbox-wrapper {
+    display: flex;
+
+}
+
+fieldset,input, button, label {
+    all: unset;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-color: black;
+    max-width: 500px;
+}
+
+.input {
+    border-bottom: 0.2rem solid $color-anthrazit;
+    padding-bottom: 0.4rem;
+    margin-bottom: 2rem;
+}
