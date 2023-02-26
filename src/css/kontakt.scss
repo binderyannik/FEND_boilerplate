@@ -3,18 +3,30 @@
 @import "components/navigation.css";
 @import url(components/footer.css); 
 
+body{
+    padding: 0 7%;
+}
 nav {
     filter: invert(100%);
-    padding-bottom: 20rem;
+}
+
+.stickyfix {
+    height: 3rem;
 }
 
 
 .flexbox-wrapper {
     display: flex;
-
+    flex-wrap: wrap;
+    margin-top: 10rem;
 }
 
-fieldset,input, button, label {
+.h1--main {
+    width: 100%;
+}
+
+
+fieldset, input, button, label, textarea {
     all: unset;
 }
 
@@ -24,10 +36,44 @@ fieldset,input, button, label {
     flex-wrap: nowrap;
     border-color: black;
     max-width: 500px;
+    margin-block-start: 5rem;
 }
 
-.input {
+label {
+   &:nth-child(7) {
+    margin-bottom: 4rem;
+   } 
+}
+
+
+
+.formular--input {
     border-bottom: 0.2rem solid $color-anthrazit;
     padding-bottom: 0.4rem;
     margin-bottom: 2rem;
+    height: 4rem;
+    text-indent: 20px;
+
+    &:hover {
+        background-color: $color-grey-light;
+    }
+}
+
+.formular--textfield {
+    height: 10rem;
+}
+
+
+#telefon {
+    background-color:rgb(246, 143, 143);
+    &::placeholder {
+        color: rgb(229, 37, 37);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .h1--main {
+        width: 36%;
+    }
 }
