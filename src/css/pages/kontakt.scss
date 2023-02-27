@@ -1,7 +1,7 @@
-@import "base.css";
-@import "variables.scss";
-@import "components/navigation.css";
-@import url(components/footer.css); 
+@import "../base.css";
+@import "../variables.scss";
+@import "../components/navigation.css";
+@import url(../components/footer.css); 
 
 body{
     padding: 0 7%;
@@ -47,6 +47,7 @@ label {
 
 
 
+
 .formular--input {
     border-bottom: 0.2rem solid $color-anthrazit;
     padding-bottom: 0.4rem;
@@ -65,7 +66,8 @@ label {
 }
 
 .formular--button{
-    border: 1px solid green;
+    appearance: auto;
+    margin-right: 1rem;
 }
 
 

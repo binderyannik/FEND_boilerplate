@@ -1,6 +1,7 @@
-@import "base.css";
-@import "components/navigation.css";
-@import url(components/footer.css); 
+@import "../base.css";
+@import "../variables.scss";
+@import "../components/navigation.css";
+@import url(../components/footer.css); 
 
 h1, h2 {
     margin-bottom: 3rem;
