@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 *{
   box-sizing: inherit;
   font-family: 'Roboto', sans-serif;
@@ -6,7 +8,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: $font-rem-to-10-px;
 }
 
 body{
@@ -15,29 +17,29 @@ body{
 }
 
 h1, h2, h3 {
-  font-weight: 900;
+  font-weight: $font-weight-bold;
   line-height: 90%;
   letter-spacing: 0;
   text-decoration: none;
 }
 
 h1{
-  font-size: 6.4rem;
+  font-size: $font-size-h1;
   margin-bottom: 5px;
 }
 h2{
-  font-size: 3.6rem;
+  font-size: $font-size-h2;
 }
 h3{
-  font-size: 3.2rem;
+  font-size: $font-size-h3;
 }
 h4{
-  font-size: 1.8rem;
+  font-size: $font-size-h4;
   font-weight: 400;
 }
 p{
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: $font-size-p;
+  font-weight: $font-weight-regular;
   letter-spacing: 0;
   text-decoration: none;
   line-height: 140%;
