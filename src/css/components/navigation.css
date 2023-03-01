@@ -16,11 +16,26 @@ nav ul {
     align-items: center;
 }
 
+nav a:active {
+    color: red;
+}
+
+nav a:focus {
+    border: 2px solid white;
+}
+nav a:hover{
+    color: rgb(199, 199, 199);
+} 
+
 nav .logo {
     height: 40px;
     filter: invert(100%);
     margin-top: 15px;
+}
 
+nav .logo:hover {
+    filter: invert(80%);
+    padding-bottom: 0.2rem;
 }
 
 nav .nav-logo-left {
@@ -31,6 +46,11 @@ nav .menu {
     height: 20px;
     filter: invert(100%);
     margin-top: 15px;
+}
+
+nav .menu:hover {
+    filter: invert(80%);
+    padding-bottom: 0.2rem;
 }
 
 nav .nav-menu-right {
@@ -48,7 +68,7 @@ nav .nav-menu-right {
 ===============================================================================================================
 */
 
-@media (min-width: 1200px){
+@media (min-width: 1080px){
     nav .logo {
         height: 35px;
         margin-top: 10px;
@@ -79,5 +99,9 @@ nav .nav-menu-right {
         color: #fff;
         margin-right: 4rem;
         text-decoration: none;
+    }
+
+    #current {
+        text-decoration: underline;
     }
 }
