@@ -23,6 +23,12 @@ nav a:active {
 nav a:focus {
     border: 2px solid white;
 }
+
+#logo:focus{
+    border: none;
+}
+
+
 nav a:hover{
     color: rgb(199, 199, 199);
 } 
