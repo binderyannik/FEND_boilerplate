@@ -263,7 +263,9 @@
 .wrapper-argumente{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15%;
     width: 100%;
     padding: 10px 0;
     border: 0px solid orange;
@@ -293,6 +295,7 @@
 .button-wrapper{
     border: 0px solid green;
     display: flex;
+    width: 80%;
     justify-content: center;
     margin-top: 40px;
 }
@@ -318,6 +321,9 @@
 .shop2-button:active{
     background-color: #D7BE9D;
 }
+
+
+
 
 .map{
     margin-top: 60px;
@@ -398,13 +404,13 @@
     align-items: flex-start;
     background-color: white;
     border: 0px solid red;
-    width: 40%;
+    max-width: 40%;
 }
 
 .bio-wrapper {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     background-color: white;
     border: 0px solid red;
@@ -414,9 +420,8 @@
     display: flex;
     flex-direction: column;
     order: 2;
-    width: 40%;
-    position: relative;
-    bottom: 6rem;
+    width: 30%;
+    margin-left: 10rem;
 }
 
 
@@ -549,24 +554,16 @@ padding-bottom: 8rem;
 }
 
 .button-wrapper{
-    position: absolute;
-    bottom: 4rem;
-    margin: 0 auto;
-    right: 28rem;
-    border: 0px solid green;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    all: unset;
 }
 
 .shop2-button{
     color: white;
     font-size: 1.4rem;
-    padding: 10px 15px;
     background-color: #1a1a1a;
     border: 1px solid white; 
+    padding: 1.5rem 1.5rem;
     border-radius: 5px;
-    width: 160px;
     text-align: center;
     text-decoration: none;
 }
