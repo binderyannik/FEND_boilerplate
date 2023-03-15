@@ -1,0 +1,64 @@
+@import "../base.scss";
+@import "../variables.scss";
+@import "../components/navigation.css";
+@import url(../components/footer.css); 
+
+
+
+
+
+/*=============================================================================================================
+                    Produktauswahl - START
+===============================================================================================================
+*/
+
+#products {
+    padding-top: 60px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.product-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.product-text{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    color: white;
+    border: 0px solid orange;
+
+}
+.product-picture {
+    background-color:#FFF;
+}
+
+.product-text h4 {
+    margin-top: 5px;
+    line-height: 130%;
+}
+.product-text p{
+    color: #737373;
+}
+
+.product-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 15px;
+    margin-top: 4px; 
+}
+.product-icons img {
+    width: 15px;
+    margin-right: 5px;
+    height: 15px;
+}
