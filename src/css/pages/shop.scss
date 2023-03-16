@@ -1,6 +1,6 @@
 @import "../base.scss";
 @import "../variables.scss";
-@import "../components/navigation.css";
+@import "../components/navigation-black.css";
 @import url(../components/footer.css); 
 
 
@@ -61,4 +61,12 @@
     width: 15px;
     margin-right: 5px;
     height: 15px;
+}
+
+
+
+
+.h1 {
+    margin-top: 15rem;
+    width: 60vw;
 }
