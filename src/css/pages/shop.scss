@@ -1,7 +1,7 @@
 @import "../base.scss";
 @import "../variables.scss";
 @import "../components/navigation-black.css";
-@import url(../components/footer.css); 
+@import url(../components/footer.css);
 
 
 
@@ -33,16 +33,16 @@
     color: white;
 }
 
-.product-wrapper{
+.product-wrapper {
     width: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
-.product-text{
+.product-text {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -52,10 +52,11 @@
 
     & a {
         all: unset;
-        cursor:wait;
+        cursor: wait;
     }
 
 }
+
 .product-picture {
     background-color: $color-grey-light;
     padding: 20px;
@@ -66,18 +67,20 @@
     margin-top: 5px;
     line-height: 130%;
 }
-.product-text p{
+
+.product-text p {
     color: #737373;
 }
 
-.product-icons{
+.product-icons {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     height: 15px;
-    margin-top: 4px; 
+    margin-top: 4px;
     filter: invert(100%);
 }
+
 .product-icons img {
     width: 15px;
     margin-right: 5px;
@@ -94,11 +97,11 @@
 ===============================================================================================================
 */
 
-.map{
+.map {
     margin-top: 60px;
 }
 
-.map h2{
+.map h2 {
     margin-bottom: 4rem;
     padding-left: 7%;
 }
@@ -137,34 +140,47 @@
 
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 911px) 
-{
+@media (min-width: 576px) and (max-width: 911px) {
 
     /*=============================================================================================================
                     H1 - ÜBERSCHRIFT
 ===============================================================================================================
 */
 
-.h1 {
-    width: 80vw;
+    .h1 {
+        width: 80vw;
+    }
+
 }
-    
-}
 
 
 
 
-@media (min-width: 912px) and (max-width: 1199px)
-{
+@media (min-width: 912px) and (max-width: 1199px) {
 
     .h1 {
         width: 70vw;
     }
-    
+
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .h1 {
         width: 100vw;
     }
+
+
+    .product-text {
+        width: 24%;
+
+    }
+
+    .product-highlight {
+            background-color: $color-beige;
+    }
+
+    .product--special--border {
+        border: 1px dotted blue;
+    }
+
 }
