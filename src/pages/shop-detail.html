@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/pages/shop-details.scss">
+    <link rel="stylesheet" href="../css/pages/shop-detail.scss">
     <title>Rustica - Rösterei & Café</title>
 </head>
 
@@ -32,23 +32,150 @@
 
 
 
-    <article class="product-text">
-        <img class="product-picture" src="/images/FEND_Coffee_Costa-Rica 2.png" href="./shop-detail.html"
+    <section class="section--product--wrapper">
+        <img class="product--picture" src="/images/FEND_Coffee_Costa-Rica 2.png" href="./shop-detail.html"
             alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
-        <h4> <a href="./shop-detail.html">
+        <h2 class="product--name"> <a href="./shop-detail.html">
                 Costa Rica</a>
-        </h4>
-        <p>
+        </h2>
+        <p class="product--price">
             6,90 € - 24,00 €
         </p>
-        <p class="product-description">Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den
+        <p class="product--description">Costa Rica Filterkaffee ist äußerst ergiebig und hat praktisch keine Säure. Den
             Gaumen umschmeichelt ein vollmundiges Haselnussaroma. Gleich probieren!
         </p>
-    </article>
+
+        <form>
+            <input list="product--amount" class="product--amount" placeholder="Wie viel Kaffee brauchst du?">
+            <datalist id="betreff" class="formular--dropdown--datalist">
+                <option value="250g gemahlen">250g gemahlen</option>
+                <option>500g gemahlen</option>
+                <option>250g Bohnen</option>
+                <option>500g Bohnen</option>
+            </datalist>
+        </form>
+
+        <button class="button--warenkorb"><a href="#"> in den Warenkorb </a></button>
+
+        <aside class="product--icons--wrapper">
+            <figure class="icons--icons--wrapper">
+                <img src="../images/icon-kaffee-tasse.svg" alt="bester Geschmack" title="bester Geschmack">
+                <p> Bester Geschmack </p>
+            </figure>
+            <figure class="icons--icons--wrapper">
+                <img src="../images/icon-kaffee-schaufel-black.svg" alt="fair gehandelt" title="Fair gehandelt">
+                <p> Fair gehandelt </p>
+            </figure>
+            <figure class="icons--icons--wrapper">
+                <img src="../images/icon-kaffee-pflanze.svg" alt="Bio-Qualität" title="Bio Qualität">
+                <p> Bio Qualität </p>
+            </figure>
+        </aside>
+    </section>
+
+    <section class="after--product--description">
+        <h2> Beschreibung</h2>
+        <p>
+            MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein
+            Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische
+            Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten
+            komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein
+            überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist
+            unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 /
+            Nicht-EU-Landwirtschaft.
+        </p>
+    </section>
 
 
+    <aside id="other--products" class="other--products--wrapper">
+        <h2>
+            Entdecke unsere KaffeeSorten
+        </h2>
+        <section class="product-wrapper">
+            <article class="product-text">
+                <a class="product-picture"> <img src="/images/FEND_Coffee_Costa-Rica 2.png" href="./shop-detail.html"
+                        alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                </a>
+                <h4> <a href="./shop-detail.html">
+                        Costa Rica</a>
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="../images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="../images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="../images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
 
 
+            <article class="product-text">
+                <a class="product-picture"> <img src="/images/FEND_Coffee_Costa-Rica 2.png" href="./shop-detail.html"
+                        alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                </a>
+                <h4><a href="./shop-detail.html">
+                        Costa Rica</a>
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="../images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="../images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="../images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+
+
+            <article class="product-text">
+                <a class="product-picture"> <img src="/images/FEND_Coffee_Costa-Rica 2.png" href="./shop-detail.html"
+                        alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                </a>
+                <h4><a href="./shop-detail.html">
+                        Costa Rica</a>
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="../images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="../images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="../images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+
+            <article class="product-text">
+                <a class="product-picture" href="./shop-detail.html"> <img src="/images/FEND_Coffee_Costa-Rica 2.png"
+                        href="./shop-detail.html" alt="Bild unseres Costa-Rica Kaffees" title="Unser Kaffee Costa-Rica">
+                </a>
+                <h4>
+                    Costa Rica
+                </h4>
+                <p>
+                    6,90 € - 24,00 €
+                </p>
+                <figure class="product-icons">
+                    <img src="../images/icon-kaffee-bohne.svg" alt="Bild einer Kaffeebohne" title="Genutze Kaffeebohne">
+                    <img src="../images/icon-french-press.svg" alt="Bild einer French Press"
+                        title="Welche Kaffeemaschine zum Kaffee passt">
+                    <img src="../images/icon-kaffee-schaufel.svg" alt="Bild einer Kaffeeschaufel"
+                        title="Wie viel Kaffee darf es sein?">
+                </figure>
+            </article>
+        </section>
+
+        <a href="./shop-index.html" class="other--products--button">Alle Produkte</a>
+    </aside>
+
+    {{> footer-sub-sides home="true" }}
 
 </body>
+
 </html>

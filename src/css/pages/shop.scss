@@ -51,7 +51,6 @@
     border: 0px solid orange;
 
     & a {
-        all: unset;
         cursor: wait;
     }
 
@@ -60,6 +59,10 @@
 .product-picture {
     background-color: $color-grey-light;
     padding: 20px;
+
+    & img {
+        width: 100%;
+    }
 }
 
 .product-text h4 {
@@ -176,7 +179,7 @@
     }
 
     .product-highlight {
-            background-color: $color-beige;
+        background-color: $color-beige;
     }
 
     .product--special--border {

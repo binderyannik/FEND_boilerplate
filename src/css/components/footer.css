@@ -1,7 +1,7 @@
 
 .footer-wrapper {
     padding: 60px 7%;
-    background-color:#1a1a1a;
+    background-color:black;
     color:#FFF;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,6 @@
 
 .footer-wrapper {
     padding: 60px 7%;
-    background-color:#1a1a1a;
     color:#FFF;
     display: flex;
     flex-direction: row;
