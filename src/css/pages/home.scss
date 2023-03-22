@@ -36,6 +36,15 @@
 ===============================================================================================================
 */
 
+a {
+    all: unset;
+    cursor: pointer;
+    
+    &:hover{
+        font-weight: 900;
+    }
+}
+
 .h1 {
     font-size: 8.4rem;
     font-weight: 900;
@@ -158,6 +167,12 @@
 }
 .product-picture {
     background-color:#FFF;
+    & img {
+        width:100%;
+    }
+    &:hover{
+        background-color: $color-grey-light;
+    }
 }
 
 .product-text h4 {
