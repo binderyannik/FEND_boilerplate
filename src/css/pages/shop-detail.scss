@@ -18,14 +18,12 @@
     flex-wrap: wrap;
     width:100%;
     padding: 0 7%;
-
+    margin-top: 10rem;
 }
 
 
-
 .product--picture{
-    height: 60vh;
-    margin-top: 10rem;
+    width: 50vw;
     object-fit: contain;
     background-color: $color-beige;
     margin-bottom: 2rem;
@@ -50,8 +48,9 @@
     margin-bottom: 3rem;
 }
 
-form{
-    align-self: center;
+.flex--row--wrapper {
+
+
 }
 
 .product--amount {
@@ -113,6 +112,15 @@ form{
 
 
 
+/*=============================================================================================================
+                    WEITERE PRODUKT - START
+
+                    Hier wird es ein wenig konfus, denn die Klassen sind schlecht benannt: z.B. gibt es hier eine
+                    product-picture Klasse mit nur einem Bindestrich, wogegen oben product--picture zu finden ist.
+
+===============================================================================================================
+*/
+
 
 .other--products--wrapper {
     padding: 10rem 7% 20rem 7%;
@@ -169,7 +177,6 @@ form{
 .product-picture {
     background-color: $color-grey-light;
     padding: 20px;
-
     & img {
         width: 100%;
     }
@@ -206,3 +213,123 @@ form{
 
 
 }
+
+
+
+
+
+
+
+
+@media (min-width: 912px) {
+
+    .section--product--wrapper {
+        height: 70vh;
+        width:100vw;
+    }
+
+    
+    .product--picture{
+        max-width: 40vw;
+        max-height: 70vh;
+        flex-basis: 100%;
+    }
+
+        
+    .product--name, 
+    .product--price, 
+    .product--description, 
+    .flex--row--wrapper, 
+    .icons--icons--wrapper {
+        padding-left: 5vw;
+    }
+    
+    .product--name {
+        margin-bottom: 1rem;
+        width: 40vw;
+        font-size: 5rem;
+    }
+    
+    .product--price {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .product--description {
+        width: 40vw;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+
+    
+    .formular--dropdown--datalist{
+        align-self: center;
+        width: 20vw;
+        height: 3rem;
+    }
+    
+    .product--amount {
+        width: 40rem;
+        height: 4rem;
+        border: 2px solid $color-anthrazit;
+        border-radius: 0.8rem;
+        margin-bottom: 3rem;
+    }
+    
+    .button--warenkorb {
+        width: 20vw;
+        align-self: center;
+        background-color: $color-anthrazit;
+        border-radius: 0.5rem;
+        padding: 1rem 5rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+    
+        & a{
+            text-decoration: none;
+            color: $color-white;
+            font-weight: 100;
+        }
+    
+    }
+    
+    .product--icons--wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 50%;
+        gap: 10%;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-bottom: 8rem;
+    }
+    
+    .icons--icons--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .after--product--description {
+        padding: 0 7%;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        
+        & h2 {
+            margin-bottom: 2rem;
+    
+        }
+        & p {
+            margin-bottom: 10rem;
+        }
+    }
+
+}
+
+
+
+
