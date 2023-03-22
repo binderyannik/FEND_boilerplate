@@ -7,6 +7,15 @@
 
 
 
+
+// KLASSEN-NAME
+// LAYOUT (display, flex, margin, padding, width, height, position)
+// TEXT (font-size, font-weight, etc.)
+// APPEARANCE (color, border, cursor, box-shadow,)
+// ANIMATION (transition)
+// OTHER (margin-block-end, etx.)
+
+
 /*=============================================================================================================
                     DETAIL-PRODUKT - START
 ===============================================================================================================
@@ -16,17 +25,19 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:100%;
-    padding: 0 7%;
     margin-top: 10rem;
+    padding: 0 7%;
+    width:100%;
 }
 
 
 .product--picture{
-    width: 50vw;
+    height: 60vh;
+    width: 100%;
     object-fit: contain;
-    background-color: $color-beige;
     margin-bottom: 2rem;
+    //Appearance
+    background-color: $color-beige;
 
 }
 
@@ -39,18 +50,20 @@
 }
 
 .product--price {
-    font-size: 2rem;
     margin-bottom: 3rem;
+    //Text
+    font-size: 2rem;
 }
 
 .product--description {
-    width: 90%;
     margin-bottom: 3rem;
+    width: 90%;
+
 }
 
-.flex--row--wrapper {
-
-
+.flex--form--wrapper{
+    display: flex;
+    flex-direction: column;
 }
 
 .product--amount {
@@ -78,14 +91,15 @@
 }
 
 .product--icons--wrapper{
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 80%;
-    gap: 10%;
-    align-items: flex-end;
     justify-content: flex-start;
     margin-bottom: 8rem;
+    width: 80%;
+    gap: 10%;
+    
 }
 
 .icons--icons--wrapper {
@@ -239,9 +253,9 @@
     .product--name, 
     .product--price, 
     .product--description, 
-    .flex--row--wrapper, 
+    .product--amount, 
     .icons--icons--wrapper {
-        padding-left: 5vw;
+        margin-left: 8vw;
     }
     
     .product--name {
@@ -256,34 +270,36 @@
     }
     
     .product--description {
-        width: 40vw;
+        width: 40%;
         margin-bottom: 3rem;
         font-size: 1.6rem;
     }
 
-    
-    .formular--dropdown--datalist{
-        align-self: center;
-        width: 20vw;
-        height: 3rem;
+    .flex--form--wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
     }
     
     .product--amount {
-        width: 40rem;
         height: 4rem;
+        margin-bottom: 3rem;
+        width: 35%;
+
         border: 2px solid $color-anthrazit;
         border-radius: 0.8rem;
-        margin-bottom: 3rem;
     }
     
     .button--warenkorb {
-        width: 20vw;
-        align-self: center;
+
+        margin-bottom: 4rem;
+        padding: 1rem 5rem;
+        width: 40%;
+        
+        font-weight: 400;
+
         background-color: $color-anthrazit;
         border-radius: 0.5rem;
-        padding: 1rem 5rem;
-        font-weight: 400;
-        margin-bottom: 4rem;
     
         & a{
             text-decoration: none;
