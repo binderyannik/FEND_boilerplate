@@ -1,7 +1,7 @@
 @import "../base.scss";
 @import "../variables.scss";
 @import "../components/navigation.css";
-@import url(../components/footer.css); 
+@import url(../components/footer.css);
 
 
 
@@ -16,7 +16,7 @@
                     HEADER-BILD
 ===============================================================================================================
 */
-.hero-section{
+.hero-section {
     height: 50vh;
     width: 100%;
     border: 0px solid orange;
@@ -38,11 +38,12 @@
     flex-direction: column;
 }
 
-.flex-wrapper h2, .p-roesterei {
+.flex-wrapper h2,
+.p-roesterei {
     margin-bottom: 2rem;
 }
 
-.timetable{
+.timetable {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,10 +61,11 @@
     margin-top: 6rem;
     margin-bottom: 2rem;
 }
+
 .gebaeck-p {
- line-height: 1.8rem;
- color: black;
- width: 100%;   
+    line-height: 1.8rem;
+    color: black;
+    width: 100%;
 }
 
 /*=============================================================================================================
@@ -106,7 +108,7 @@
 
 
 
-.map h2{
+.map h2 {
     margin-bottom: 4rem;
     padding-left: 7%;
 }
@@ -128,14 +130,14 @@
 
 @media (min-width: 1080px) {
 
-    
-/*=============================================================================================================
+
+    /*=============================================================================================================
                     MENÜ FÜR DIE DESKTOP-ANSICHT - START
 ===============================================================================================================
 */
 
 
-/*=============================================================================================================
+    /*=============================================================================================================
                 MENÜ FÜR DIE DESKTOP-ANSICHT - ENDE
                 
 
@@ -143,44 +145,53 @@
 ===============================================================================================================
 */
 
-.roesterei-wrapper {
-    margin: 6rem 7% auto 7%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    .roesterei-wrapper {
+        margin: 6rem 7% auto 7%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-.flex-wrapper {
+    .flex-wrapper {
         width: 46.5%;
     }
-    
-    .flex-wrapper h2, .p-roesterei {
+
+    .flex-wrapper h2,
+    .p-roesterei {
         margin-bottom: 2rem;
     }
-    
-    .timetable{
+
+    .timetable {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 80%;
     }
-    
+
     .img-store-cafe {
         width: 46.5%;
         margin: 0 0 0 auto;
     }
-    
+
     .gebaeck-h3 {
+        display: block;
+        margin: 2rem auto 2rem auto;
+        width: 15ch;
+
         line-height: 3.7rem;
+        
         color: black;
-        margin-top: 6rem;
-        margin-bottom: 2rem;
-        width: 100%;
     }
+
     .gebaeck-p {
-     line-height: 1.8rem;
-     color: black;
-     width: 90%;   
+        margin: 0 auto;
+        width: 60%;
+
+        line-height: 1.8rem;
+
+        color: black;
+
+
     }
 
 
@@ -192,19 +203,19 @@
     .gallery-wrapper {
         height: 65vh;
     }
-    
+
     .gallery-wrapper img {
         object-fit: cover;
         width: 24%;
     }
-    
+
     .gallery-image-1,
     .gallery-image-2,
     .gallery-image-6,
     .gallery-image-8 {
         height: 32%;
     }
-    
+
     .gallery-image-3,
     .gallery-image-4,
     .gallery-image-5,
@@ -215,28 +226,35 @@
     .gallery-image-1 {
         order: 1;
     }
-    .gallery-image-2{
+
+    .gallery-image-2 {
         order: 5;
     }
-    .gallery-image-3{
+
+    .gallery-image-3 {
         order: 6;
     }
+
     .gallery-image-4 {
         order: 2;
     }
-    .gallery-image-5{
+
+    .gallery-image-5 {
         order: 3;
     }
-    .gallery-image-6{
+
+    .gallery-image-6 {
         order: 8;
     }
-    .gallery-image-7{
+
+    .gallery-image-7 {
         order: 7;
     }
-    .gallery-image-8{
+
+    .gallery-image-8 {
         order: 4;
     }
-    
-    
+
+
 
 }
