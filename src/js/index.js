@@ -1,10 +1,4 @@
-/*import myFunction, { multiply } from "./myModule";
-
-myFunction();
-
-const result = multiply(2, 5);
-
-console.log(result);*/
+import "../css/pages/home.scss"
 
 
 const productContainer = document.querySelector(".product-container");
@@ -34,3 +28,39 @@ products.forEach((product) => {
 
 
 productContainer.innerHTML = productsHtml;
+
+
+
+
+
+
+
+const appContainer = document.querySelector("#app");
+
+//create article
+const article = document.createElement("article");
+
+
+//create image
+const productImage = document.createElement("img");
+productImage.setAttribute("src", "https://unsplash.com/de/fotos/zUNs99PGDg0")
+article.append(productImage);
+
+
+
+
+//create product heading
+const productTitle = document.createElement("h3");
+productTitle.textContent = "ProduktTitel";
+
+//append heading to article
+article.append(productTitle);
+
+
+//create price
+const productPrice = document.createElement("span");
+productPrice.textContent = "€ 3.50";
+article.append(productPrice);
+
+//append article to appContainer
+appContainer.append(article);
